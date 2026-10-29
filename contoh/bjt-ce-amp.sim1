@@ -1,0 +1,89 @@
+<circuit version="1.1.0-SR1" rev="261029" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Battery" CircId="Battery-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-420,160" rotation="0" hflip="1" vflip="1" label="Battery-1" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="12 V" Resistance="1 mΩ" />
+
+<item itemtype="WaveGen" CircId="WaveGen-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-420,-40" rotation="0" hflip="1" vflip="1" label="WaveGen-2" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Wave_Type="Sine" Freq="1 kHz" Phase="0 _º" Steps="100 _Steps" Duty="50 _%" Always_On="true" Bipolar="false" Floating="false" Semi_Ampli="10 mV" Mid_Volt="0 V" />
+
+<item itemtype="Capacitor" CircId="C1-3" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="-320,-40" rotation="0" hflip="1" vflip="1" label="C1-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="10 µF" Resistance="1 µΩ" InitVolt="0 V" ReaStep="0 ns" />
+
+<item itemtype="Resistor" CircId="R1-4" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-240,-160" rotation="0" hflip="1" vflip="1" label="R1-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="20 k" />
+
+<item itemtype="Resistor" CircId="R2-5" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-240,40" rotation="0" hflip="1" vflip="1" label="R2-5" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="3.6 k" />
+
+<item itemtype="BJT" CircId="Q1-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-80,-40" rotation="0" hflip="1" vflip="1" label="Q1-6" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" PNP="false" Gain="100" Vcrit="0.670736 V" />
+
+<item itemtype="Resistor" CircId="RC-7" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="40,-160" rotation="0" hflip="1" vflip="1" label="RC-7" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="1.2 k" />
+
+<item itemtype="Resistor" CircId="RE-8" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="40,80" rotation="0" hflip="1" vflip="1" label="RE-8" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="220 Ω" />
+
+<item itemtype="elCapacitor" CircId="CE-9" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="120,80" rotation="0" hflip="1" vflip="1" label="CE-9" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="100 µF" Resistance="1 µΩ" InitVolt="0 V" ReaStep="0 ns" />
+
+<item itemtype="Capacitor" CircId="C2-10" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="120,-40" rotation="0" hflip="1" vflip="1" label="C2-10" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="10 µF" Resistance="1 µΩ" InitVolt="0 V" ReaStep="0 ns" />
+
+<item itemtype="Ground" CircId="Ground-11" mainComp="false" Show_id="false" Show_Val="false" Pos="-320,240" rotation="0" hflip="1" vflip="1" label="Ground-11" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="GroundRE-12" mainComp="false" Show_id="false" Show_Val="false" Pos="40,180" rotation="0" hflip="1" vflip="1" label="GroundRE-12" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="GroundCE-13" mainComp="false" Show_id="false" Show_Val="false" Pos="120,180" rotation="0" hflip="1" vflip="1" label="GroundCE-13" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="GroundVin-14" mainComp="false" Show_id="false" Show_Val="false" Pos="-420,60" rotation="0" hflip="1" vflip="1" label="GroundVin-14" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Probe" CircId="Vout-21" mainComp="false" Show_id="false" Show_Val="true" Pos="200,-40" rotation="-45" hflip="1" vflip="1" label="Vout-21" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Node" CircId="NVcc-15" mainComp="false" Pos="-160,-220" />
+
+<item itemtype="Node" CircId="NBase-16" mainComp="false" Pos="-240,-40" />
+
+<item itemtype="Node" CircId="NBase2-17" mainComp="false" Pos="-160,-40" />
+
+<item itemtype="Node" CircId="NCol-18" mainComp="false" Pos="40,-40" />
+
+<item itemtype="Node" CircId="NEm-19" mainComp="false" Pos="40,20" />
+
+<item itemtype="Node" CircId="NGnd-20" mainComp="false" Pos="-320,160" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="Battery-1-lPin" endpinid="NVcc-15-0" pointList="-436,160,-436,-220,-160,-220" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="R1-4-lPin" endpinid="NVcc-15-1" pointList="-256,-160,-160,-160,-160,-220" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="RC-7-lPin" endpinid="NVcc-15-2" pointList="24,-160,-160,-160,-160,-220" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="R1-4-rPin" endpinid="NBase-16-0" pointList="-224,-160,-224,-40,-240,-40" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="R2-5-lPin" endpinid="NBase-16-1" pointList="-256,40,-256,-40,-240,-40" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="NBase-16-2" endpinid="NBase2-17-2" pointList="-240,-40,-160,-40" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="C1-3-rPin" endpinid="NBase2-17-0" pointList="-304,-40,-160,-40" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="Q1-6-base" endpinid="NBase2-17-1" pointList="-96,-40,-160,-40" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="RC-7-rPin" endpinid="NCol-18-0" pointList="56,-160,56,-40,40,-40" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="Q1-6-collector" endpinid="NCol-18-1" pointList="-72,-56,40,-56,40,-40" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="C2-10-lPin" endpinid="NCol-18-2" pointList="104,-40,40,-40" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="Q1-6-emiter" endpinid="NEm-19-0" pointList="-72,-24,40,-24,40,20" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="RE-8-lPin" endpinid="NEm-19-1" pointList="24,80,24,20,40,20" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="CE-9-lPin" endpinid="NEm-19-2" pointList="104,80,40,80,40,20" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="RE-8-rPin" endpinid="GroundRE-12-Gnd" pointList="56,80,56,164,40,164" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="CE-9-rPin" endpinid="GroundCE-13-Gnd" pointList="136,80,136,164,120,164" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="Battery-1-rPin" endpinid="NGnd-20-0" pointList="-404,160,-320,160" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="R2-5-rPin" endpinid="NGnd-20-1" pointList="-224,40,-224,160,-320,160" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="Ground-11-Gnd" endpinid="NGnd-20-2" pointList="-320,224,-320,160" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="WaveGen-2-outnod" endpinid="C1-3-lPin" pointList="-404,-40,-336,-40" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="WaveGen-2-gndnod" endpinid="GroundVin-14-Gnd" pointList="-404,-36,-404,44,-420,44" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="C2-10-rPin" endpinid="Vout-21-inpin" pointList="136,-40,184,-40,184,-24" />
+
+</circuit>

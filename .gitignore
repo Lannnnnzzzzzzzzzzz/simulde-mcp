@@ -1,0 +1,23 @@
+# Artefak build Qt/qmake — jangan ikut ter-commit
+
+# Isi folder build (executables/, build/, Makefile, objek hasil kompilasi).
+# Pola ini mengabaikan ISI folder build_* di level mana pun...
+**/build_*/*
+# ...TAPI file proyek di bawah ini adalah SOURCE dan wajib ikut ter-commit:
+# simulide-1.1.0/build_XX/SimulIDE_Build.pro adalah pintu masuk build
+# (yang di-include adalah SimulIDE.pro di root folder source).
+!simulide-1.1.0/build_XX/SimulIDE_Build.pro
+
+# File hasil generate qmake/uic/moc/rcc (di mana pun muncul)
+*.o
+*.obj
+moc_*.cpp
+moc_*.h
+ui_*.h
+qrc_*.cpp
+.qmake.stash
+Makefile*
+
+# File lokal Qt Creator (pengaturan per-mesin)
+*.pro.user
+*.pro.user.*
